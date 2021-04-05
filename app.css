@@ -3,25 +3,25 @@ body {
 }
  
 #logo{
-  margin-left: 10%;
-    width: 264px;
-  height: 167.35px;
-  display: inline;
+   margin-left: 10%;
+     width: 199px;
+   height: 126.17px;
+   display: inline;
  }
 
 ul {
     float: right;
     margin-right: 7%;
-    margin-top: 104px;
+    margin-top: 60px;
 }
-
 li {
     display: inline;
     padding: 10px;
     margin: 20px;
     font-family: gotham, sans-serif;
     text-transform: uppercase;
-    font-size: medium;
+    font-size: small;
+    font-weight: bold;
 }
 
 h1{
@@ -90,32 +90,6 @@ img {
     display: block
 }
 
-#logo{
-    margin-left: 10%;
-      width: 264px;
-    height: 167.35px;
-    display: inline;
-   }
-
-@media screen and (max-width: 915px) {
-    #navlist {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 412px) {
-    h1 {
-        font-size: 35px;
-    }
-    #logo {
-        width: 132px;
-        height: 83.5px;
-    }
-    h2 {
-        font-size: 20px;
-    }
-}
-
 /* navigation animations */
 a, a:hover {
     color: #000;
@@ -142,7 +116,7 @@ a, a:hover {
   
   li:hover:after {
     width: 100%;
-    background: black;
+    background: #000;
   }
 
   #footerlogo {
@@ -150,7 +124,7 @@ a, a:hover {
     margin-left: 117px;
     width: 6%;
     margin-top: 40px;
-    align-self: center;
+    align-items: baseline;
 }
 
 footer {
@@ -167,4 +141,69 @@ footer {
     padding-bottom: 10px;
     margin-left: 0;
     margin-right: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    #navlist {
+        display: none;
+    }
+}
+
+/* Tablet width */
+@media screen and (max-width: 780px) {
+    h1 {
+        font-size: 57px;
+    }
+    #logo {
+        width: 116px;
+        height: 73.8px;
+    }
+    h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    footer{
+        height: 80px;
+        margin-bottom: 0;
+    }
+    .footerinline{
+        margin-bottom: 3px;
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+    #footerlogo{
+        margin-top: 20px;
+        width: 10%;
+    }
+}
+
+/* Phone width */
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 35px;
+    }
+    #logo {
+        width: 132px;
+        height: 83.5px;
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    button{
+        margin-left: 62px;
+    }
+    .column{
+        width: 100%;
+    }
+
+    .projectImages{
+        height: 50%;
+    }
+
+    #footerlogo{
+        margin-top: 25px;
+        margin-left: 40px;
+        width: 15%;
+    }
 }
